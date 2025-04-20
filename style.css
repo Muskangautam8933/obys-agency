@@ -11,6 +11,17 @@ html, body {
   width: 100%;
 }
 
+#crsr {
+  height: 2.3vw;
+  width: 2.3vw;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3568627451);
+  position: fixed;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+}
+
 #loader {
   height: 100%;
   width: 100%;
@@ -59,7 +70,7 @@ html, body {
   font-family: "plain Light";
   text-transform: uppercase;
   opacity: 0;
-  animation-duration: 5s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
 }
 @keyframes anime {
@@ -97,11 +108,54 @@ html, body {
   position: relative;
   background-color: #111;
 }
-
-#page1 {
+#main #page1 {
   height: 100vh;
   width: 100%;
   background-color: #151515;
+}
+#main #page1 #navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5vw 5.5vw;
+}
+#main #page1 #navbar .nav-part2 {
+  display: flex;
+  gap: 3vw;
+}
+#main #page1 #navbar .nav-part2 h4 {
+  font-size: 1vw;
+  font-weight: 500;
+}
+#main #page1 .hero-section {
+  margin-top: 15vh;
+}
+#main #page1 .hero-section .hero {
+  width: 72%;
+  margin-left: 27%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 999;
+}
+#main #page1 .hero-section .hero h1 {
+  font-size: 7.2vw;
+  text-transform: uppercase;
+  line-height: 7vw;
+  font-weight: 600;
+}
+#main #page1 .hero-section .hero h2 {
+  font-size: 7.2vw;
+  text-transform: uppercase;
+  line-height: 7vw;
+  font-weight: 600;
+}
+#main #page1 .hero-section .hero :hover {
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+  font-weight: 500;
 }
 
 #page2 {
