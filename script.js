@@ -48,8 +48,10 @@ tl.from("nav",{
   opacity:0
 })
 tl.from("#hero1 h1, #hero2 h1, #hero3 h2 , #hero4 h1",{
-   y:150,
+   y:140,
    stagger:0.2,
+   duration: 0.6,
+  delay: 0.2
 })
 }
 function cursorAnimation(){
@@ -64,4 +66,4 @@ document.addEventListener("mousemove",function(dets){
 Shery.makeMagnet(".nav-part2 h4");
 }
 loadingAnimation();
-cursorAnimation();
+// cursorAnimation();

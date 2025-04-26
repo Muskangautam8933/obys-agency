@@ -4,6 +4,7 @@
   box-sizing: border-box;
   color: #fff;
   font-family: "plain Light";
+  background-color: #151515;
 }
 
 html, body {
@@ -139,6 +140,7 @@ html, body {
   align-items: center;
   position: relative;
   z-index: 999;
+  overflow: hidden;
 }
 #main #page1 .hero-section .hero h1 {
   font-size: 7.2vw;
@@ -151,21 +153,168 @@ html, body {
   text-transform: uppercase;
   line-height: 7vw;
   font-weight: 600;
+  border-bottom: 0.5vw solid #fff;
+  padding-bottom: 0.8vw;
 }
 #main #page1 .hero-section .hero :hover {
   -webkit-text-stroke: 2px #fff;
   color: transparent;
   font-weight: 500;
+  border: transparent;
 }
 
 #page2 {
   height: 100vh;
   width: 100%;
   background-color: #151515;
+  padding-top: 17vh;
+  position: relative;
+}
+#page2 #video-container {
+  height: 67vh;
+  width: 70%;
+  position: relative;
+  left: 25%;
+  background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
+}
+#page2 #video-container #video-cursor {
+  height: 8vw;
+  width: 8vw;
+  background-color: #FFA63D;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -10;
+  left: 80%;
+  z-index: 999;
+}
+#page2 #video-container #video-cursor i {
+  font-size: 2vw;
+  color: #fff;
+  background-color: #FFA63D;
+}
+#page2 #video-container img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#page2 #video-container video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #page3 {
-  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #767373;
+  position: relative;
+}
+
+#page4 {
+  min-height: 100vh;
   width: 100%;
   background-color: #151515;
-}/*# sourceMappingURL=style.css.map */
+  position: relative;
+  padding-top: 5vh;
+  overflow: hidden;
+}
+#page4 #page4-content {
+  width: 75vw;
+  position: relative;
+  margin-left: 30%;
+}
+#page4 #page4-content h1 {
+  font-size: 7vw;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+#page4 #page4-content .underline {
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  margin: 3vw 0;
+}
+#page4 #page4-content > p {
+  font-size: 2.05vw;
+  width: 50%;
+  margin-bottom: 3vw;
+}
+#page4 #page4-content .flex-div {
+  display: flex;
+}
+#page4 #page4-content .flex-div img {
+  width: 48%;
+}
+#page4 #page4-content .flex-div p {
+  font-size: 1.5vw;
+  margin-bottom: 3vw;
+  display: flex;
+  width: 20%;
+  margin-left: 3vw;
+}
+
+#page5 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+#page5 span {
+  font-style: italic;
+  font-family: "silk serif";
+  color: transparent;
+}
+#page5 .elem {
+  white-space: nowrap;
+  overflow-x: hidden;
+  margin-bottom: -3vw;
+}
+#page5 .elem h1 {
+  font-size: 8vw;
+  -webkit-text-stroke: 1px #fff;
+  font-weight: 400;
+  color: transparent;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 16px;
+  animation-name: anima;
+  animation-timing-function: linear;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+}
+@keyframes anima {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+#page5 .elem2 {
+  white-space: nowrap;
+  overflow-x: hidden;
+  margin-bottom: -3vw;
+}
+#page5 .elem2 h1 {
+  font-size: 8vw;
+  -webkit-text-stroke: 1px #fff;
+  font-weight: 400;
+  color: transparent;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 16px;
+  transform: translateX(calc(-100% - 20px));
+  animation-name: anima;
+  animation-timing-function: linear;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+/* Keyframes must always be outside any selector *//*# sourceMappingURL=style.css.map */
